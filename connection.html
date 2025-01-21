@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Custom CSS for Add New Resource section */
+        /* Custom CSS for Add New Resource section */
+.home-grid {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.home-grid .heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.options-container {+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+}
+
+.option-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.option {
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.option:hover {
+    background-color: #e0e0e0; /* Darker gray background on hover */
+}
+
+.option-img {
+    width: 80px; /* Reduced image size */
+    height: 80px;
+    margin-bottom: 15px; /* Increased margin for spacing */
+    border-radius: 50%; /* Rounded image */
+    border: 2px solid #333; /* Black border */
+}
+
+.option-title {
+    font-size: 20px; /* Increased font size */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.option-description {
+    font-size: 16px; /* Increased font size */
+    color: #666;
+    line-height: 1.4; /* Improved line spacing */
+}
+
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <section class="flex">
+        <a href="home.html" class="logo">
+            <img src="Rc.jpg" alt="Resourcify Connect" style="width: 100px; height: auto;">
+            <span>RESOURCIFY CONNECT</span>
+        </a>
+        <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="Search courses..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+        <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="">
+            <h3 class="name">Saurajyoti Bhattacharjee</h3>
+            <p class="role">Student</p>
+            <a href="profile.html" class="btn">View Profile</a>
+            <div class="flex-btn">
+                <a href="login.html" class="option-btn">Login</a>
+                <a href="register.html" class="option-btn">Register</a>
+            </div>
+        </div>
+    </section>
+</header>
+
+<div class="side-bar">
+    <div id="close-btn">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src="images/pic-1.jpg" class="image" alt="">
+        <h3 class="name">Saurajyoti Bhattacharjee</h3>
+        <p class="role">CSE Core Student</p>
+        <a href="profile.html" class="btn">View Profile</a>
+    </div>
+    <nav class="navbar">
+        <a href="employee.html"><i class="fas fa-user"></i><span>Employee Details</span></a>
+        <a href="project.html"><i class="fas fa-project-diagram"></i><span>Project Details</span></a>
+        <a href="assignment.html"><i class="fas fa-tasks"></i><span>Assignment Details</span></a>
+        <a href="connection.html"><i class="fas fa-network-wired"></i><span>Connection Details</span></a>
+        <a href="task-details.html"><i class="fas fa-tasks"></i><span>Task Details</span></a>
+        <a href="resources.html"><i class="fas fa-book"></i><span>Resource Details</span></a>
+        <a href="allocation.html"><i class="fas fa-list"></i><span>Allocation Details</span></a>
+    </nav>
+</div>
+
+<section class="home-grid">
+   <h1 class="heading">External Connections</h1>
+   <div class="options-container">
+       <!-- First Row -->
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="industry.jpg" alt="Industry Partnerships" class="option-img">
+               <h2 class="option-title">Industry Partnerships</h2>
+               <p class="option-description">Collaborations with industry partners for joint projects or research initiatives.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="professional.jpg" alt="Professional Associations" class="option-img">
+               <h2 class="option-title">Professional Associations</h2>
+               <p class="option-description">Membership in professional associations providing networking opportunities and industry insights.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="government.jpg" alt="Government Agencies" class="option-img">
+               <h2 class="option-title">Government Agencies</h2>
+               <p class="option-description">Partnerships with government agencies for research grants or regulatory compliance.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="nonprofit.jpg" alt="Nonprofit Organizations" class="option-img">
+               <h2 class="option-title">Nonprofit Organizations</h2>
+               <p class="option-description">Collaborative efforts with nonprofits for community outreach or social impact projects.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="academic.jpg" alt="Academic Institutions" class="option-img">
+               <h2 class="option-title">Academic Institutions</h2>
+               <p class="option-description">Partnerships with universities or research institutions for joint research endeavors.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="suppliers.jpg" alt="Suppliers and Vendors" class="option-img">
+               <h2 class="option-title">Suppliers and Vendors</h2>
+               <p class="option-description">Relationships with suppliers and vendors for sourcing materials or services.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="consultants.jpg" alt="Consultants" class="option-img">
+               <h2 class="option-title">Consultants</h2>
+               <p class="option-description">Engagement of external consultants for specialized expertise or project support.</p>
+           </div>
+       </a>
+       <!-- Second Row -->
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="customers.jpg" alt="Customers/Clients" class="option-img">
+               <h2 class="option-title">Customers/Clients</h2>
+               <p class="option-description">Direct connections with clients or customers for project implementation or service delivery.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="investors.jpg" alt="Investors" class="option-img">
+               <h2 class="option-title">Investors</h2>
+               <p class="option-description">Relationships with investors or venture capitalists for funding and strategic guidance.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="media.jpg" alt="Media Outlets" class="option-img">
+               <h2 class="option-title">Media Outlets</h2>
+               <p class="option-description">Connections with media outlets for public relations or marketing purposes.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="technology.jpg" alt="Technology Providers" class="option-img">
+               <h2 class="option-title">Technology Providers</h2>
+               <p class="option-description">Partnerships with technology providers for software or hardware solutions.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="legal.jpg" alt="Legal Counsel" class="option-img">
+               <h2 class="option-title">Legal Counsel</h2>
+               <p class="option-description">Engagement of external legal counsel for contractual agreements or compliance issues.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="financial.jpg" alt="Financial Institutions" class="option-img">
+               <h2 class="option-title">Financial Institutions</h2>
+               <p class="option-description">Relationships with banks or financial institutions for banking services or investment management.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="trade.jpg" alt="Trade Organizations" class="option-img">
+               <h2 class="option-title">Trade Organizations</h2>
+               <p class="option-description">Membership in trade organizations for industry advocacy and networking.</p>
+           </div>
+       </a>
+       <!-- Third Row -->
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="research.jpg" alt="Research Consortia" class="option-img">
+               <h2 class="option-title">Research Consortia</h2>
+               <p class="option-description">Participation in research consortia for collaborative scientific endeavors.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="international.jpg" alt="International Partners" class="option-img">
+               <h2 class="option-title">International Partners</h2>
+               <p class="option-description">Collaborations with international partners for global projects or initiatives.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="startup.jpg" alt="Startup Incubators/Accelerators" class="option-img">
+               <h2 class="option-title">Startup Incubators/Accelerators</h2>
+               <p class="option-description">Engagement with startup programs for innovation and entrepreneurship support.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="networks.jpg" alt="Professional Networks" class="option-img">
+               <h2 class="option-title">Professional Networks</h2>
+               <p class="option-description">Connections with professional networks such as LinkedIn for talent recruitment and industry updates.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="regulatory.jpg" alt="Regulatory Agencies" class="option-img">
+               <h2 class="option-title">Regulatory Agencies</h2>
+               <p class="option-description">Relationships with regulatory bodies for compliance and licensing.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="competitors.jpg" alt="Competitors" class="option-img">
+               <h2 class="option-title">Competitors</h2>
+               <p class="option-description">Awareness of competitors for market analysis and strategic positioning.</p>
+           </div>
+       </a>
+   </div>
+</section>
+
+<section class="home-grid">
+   <h1 class="heading">Internal Connections</h1>
+   <div class="options-container">
+       <!-- First Row -->
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="pt.png" alt="Project Teams" class="option-img">
+               <h2 class="option-title">Project Teams</h2>
+               <p class="option-description">Formation of project teams comprising employees from different departments for project execution.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="cf.jpg" alt="Cross-Functional Collaboration" class="option-img">
+               <h2 class="option-title">Cross-Functional Collaboration</h2>
+               <p class="option-description">Collaboration between departments (e.g., R&D, Marketing, Operations) for product development.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="ts.png" alt="Task Forces" class="option-img">
+               <h2 class="option-title">Task Forces</h2>
+               <p class="option-description">Establishment of task forces to address specific organizational challenges or opportunities.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="em.jpg" alt="Employee Resource Groups" class="option-img">
+               <h2 class="option-title">Employee Resource Groups</h2>
+               <p class="option-description">Participation in employee resource groups for diversity and inclusion initiatives.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="mp.jpg" alt="Mentorship Programs" class="option-img">
+               <h2 class="option-title">Mentorship Programs</h2>
+               <p class="option-description">Implementation of mentorship programs connecting experienced employees with newcomers.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="ks.jpg" alt="Knowledge Sharing Sessions" class="option-img">
+               <h2 class="option-title">Knowledge Sharing Sessions</h2>
+               <p class="option-description">Conducting knowledge-sharing sessions or brown bag lunches to facilitate learning and development.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="internal_training_programs_image.jpg" alt="Internal Training Programs" class="option-img">
+               <h2 class="option-title">Internal Training Programs</h2>
+               <p class="option-description">Participation in internal training programs to enhance skills and competencies.</p>
+           </div>
+       </a>
+       <!-- Second Row -->
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="performance_reviews_image.jpg" alt="Performance Reviews" class="option-img">
+               <h2 class="option-title">Performance Reviews</h2>
+               <p class="option-description">Regular performance reviews and feedback sessions between employees and supervisors.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="innovation_labs_image.jpg" alt="Innovation Labs" class="option-img">
+               <h2 class="option-title">Innovation Labs</h2>
+               <p class="option-description">Collaboration within innovation labs or incubators to foster creativity and idea generation.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="project_management_offices_image.jpg" alt="Project Management Offices (PMOs)" class="option-img">
+               <h2 class="option-title">Project Management Offices (PMOs)</h2>
+               <p class="option-description">Engagement with PMOs for project governance and best practices.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="employee_recognition_programs_image.jpg" alt="Employee Recognition Programs" class="option-img">
+               <h2 class="option-title">Employee Recognition Programs</h2>
+               <p class="option-description">Recognition of employee achievements through internal awards or recognition programs.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="cross_departmental_meetings_image.jpg" alt="Cross-Departmental Meetings" class="option-img">
+               <h2 class="option-title">Cross-Departmental Meetings</h2>
+               <p class="option-description">Participation in cross-departmental meetings for alignment and coordination.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="interdepartmental_workshops_image.jpg" alt="Interdepartmental Workshops" class="option-img">
+               <h2 class="option-title">Interdepartmental Workshops</h2>
+               <p class="option-description">Participation in workshops or seminars to foster collaboration and knowledge exchange.</p>
+           </div>
+       </a>
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="agile_teams_image.jpg" alt="Agile Teams" class="option-img">
+               <h2 class="option-title">Agile Teams</h2>
+               <p class="option-description">Adoption of agile methodologies to promote collaboration and adaptability in project delivery.</p>
+           </div>
+       </a>
+       <!-- Third Row -->
+       <a href="#" class="option-link">
+           <div class="option">
+               <img src="internal_communication_platforms_image.jpg" alt="Internal Communication Platforms" class="option-img">
+               <h2 class="option-title">Internal Communication Platforms</h2>
+               <p class="option-description">Utilization of internal communication platforms for sharing updates and fostering collaboration among employees.</p>
+           </div>
+       </a>
+   </div>
+</section>
+
+<footer class="footer">
+    &copy; Copyright @ 2024 by <span><a href="mailto:sb7160@srmist.edu.in">Saurajyoti Bhattacharjee</a></span> | All rights reserved!
+</footer>
+
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

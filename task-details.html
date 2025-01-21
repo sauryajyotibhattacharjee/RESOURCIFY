@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Custom CSS for task table */
+        .tasks {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        .tasks .heading {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Table Styles */
+        #task-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #task-table th,
+        #task-table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #task-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        #task-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #task-table tbody tr:hover {
+            background-color: #e5e5e5;
+        }
+
+        /* Custom CSS for Add New Task section */
+        .add-task {
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .add-task .heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .add-task form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .add-task form label {
+            font-weight: bold;
+        }
+
+        .add-task form input[type="text"],
+        .add-task form input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .add-task form button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #790477;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-task form button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <section class="flex">
+        <a href="home.html" class="logo">
+            <img src="Rc.jpg" alt="Resourcify Connect" style="width: 100px; height: auto;">
+            <span>RESOURCIFY CONNECT</span>
+        </a>
+        <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="Search courses..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+        <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="">
+            <h3 class="name">Saurajyoti Bhattacharjee</h3>
+            <p class="role">Student</p>
+            <a href="profile.html" class="btn">View Profile</a>
+            <div class="flex-btn">
+                <a href="login.html" class="option-btn">Login</a>
+                <a href="register.html" class="option-btn">Register</a>
+            </div>
+        </div>
+    </section>
+</header>
+
+<div class="side-bar">
+    <div id="close-btn">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src="images/pic-1.jpg" class="image" alt="">
+        <h3 class="name">Saurajyoti Bhattacharjee</h3>
+        <p class="role">CSE Core Student</p>
+        <a href="profile.html" class="btn">View Profile</a>
+    </div>
+    <nav class="navbar">
+        <a href="employee.html"><i class="fas fa-user"></i><span>Employee Details</span></a>
+        <a href="project.html"><i class="fas fa-project-diagram"></i><span>Project Details</span></a>
+        <a href="assignment.html"><i class="fas fa-tasks"></i><span>Assignment Details</span></a>
+        <a href="connection.html"><i class="fas fa-network-wired"></i><span>Connection Details</span></a>
+        <a href="task-details.html"><i class="fas fa-tasks"></i><span>Task Details</span></a>
+        <a href="resources.html"><i class="fas fa-book"></i><span>Resource Details</span></a>
+        <a href="allocation.html"><i class="fas fa-list"></i><span>Allocation Details</span></a>
+    </nav>
+</div>
+
+<section class="home-grid">
+    <h1 class="heading">Quick Options</h1>
+    <!-- Existing content -->
+</section>
+
+<section class="courses">
+    <h1 class="heading">Our Courses</h1>
+    <!-- Existing content -->
+</section>
+
+<section class="tasks">
+    <h1 class="heading">Assigned Tasks</h1>
+    <table id="task-table">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Assigned To</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Tasks will be dynamically added here -->
+        </tbody>
+    </table>
+</section>
+
+<section class="add-task">
+    <h1 class="heading">Add New Task</h1>
+    <form id="task-form">
+        <label for="task">Task:</label>
+        <input type="text" id="task" name="task" required>
+        <label for="assignee">Assigned To:</label>
+        <input type="text" id="assignee" name="assignee" required>
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" required>
+        <button type="submit">Add Task</button>
+    </form>
+</section>
+
+<footer class="footer">
+    &copy; Copyright @ 2024 by <span><a href="mailto:sb7160@srmist.edu.in">Saurajyoti Bhattacharjee</a></span> | All rights reserved!
+</footer>
+
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+<script>
+    // JavaScript code to handle task addition will go here
+
+    // Function to handle task form submission
+    function taskFormSubmit(e) {
+        e.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+        // Get form input values
+        let task = document.getElementById('task').value;
+        let assignee = document.getElementById('assignee').value;
+        let deadline = document.getElementById('deadline').value;
+
+        // Create a new row
+        let tableBody = document.querySelector('.tasks tbody');
+        let newRow = tableBody.insertRow();
+
+        // Insert cells into the row and set their content
+        let cellTask = newRow.insertCell(0);
+        cellTask.textContent = task;
+
+        let cellAssignee = newRow.insertCell(1);
+        cellAssignee.textContent = assignee;
+
+        let cellDeadline = newRow.insertCell(2);
+        cellDeadline.textContent = deadline;
+
+        // Clear the form fields after submission
+        document.getElementById('task').value = '';
+        document.getElementById('assignee').value = '';
+        document.getElementById('deadline').value = '';
+
+        // Display an alert
+        alert("Task added successfully!");
+    }
+
+    // Event listener for task form submission
+    let taskForm = document.getElementById('task-form');
+    taskForm.addEventListener('submit', taskFormSubmit);
+</script>
+
+</body>
+</html>

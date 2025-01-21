@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Custom CSS for Add New Resource section */
+/* Custom CSS for Add New Resource section */
+.add-resource {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.add-resource .heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.add-resource form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.add-resource label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-resource input[type="text"],
+.add-resource textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.add-resource textarea {
+    resize: vertical;
+}
+
+.add-resource button {
+    padding: 10px 20px;
+    background-color: #a24caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-resource button:hover {
+    background-color: #a04595;
+}
+
+.home-grid {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.option {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.option-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.option-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.option-description {
+    font-size: 14px;
+    color: #666;
+}
+
+.resource-details {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.details {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.resource-details .heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.announcements {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.announcements .heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.resource-table {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.resource-table .heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.resource-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resource-table th,
+.resource-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.resource-table th {
+    background-color: #f2f2f2;
+}
+
+.resource-table .important {
+    background-color: #ffe0b2; /* Example color for important resources */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <section class="flex">
+        <a href="home.html" class="logo">
+            <img src="Rc.jpg" alt="Resourcify Connect" style="width: 100px; height: auto;">
+            <span>RESOURCIFY CONNECT</span>
+        </a>
+        <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="Search courses..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+        <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="">
+            <h3 class="name">Saurajyoti Bhattacharjee</h3>
+            <p class="role">Student</p>
+            <a href="profile.html" class="btn">View Profile</a>
+            <div class="flex-btn">
+                <a href="login.html" class="option-btn">Login</a>
+                <a href="register.html" class="option-btn">Register</a>
+            </div>
+        </div>
+    </section>
+</header>
+
+<div class="side-bar">
+    <div id="close-btn">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src="images/pic-1.jpg" class="image" alt="">
+        <h3 class="name">Saurajyoti Bhattacharjee</h3>
+        <p class="role">CSE Core Student</p>
+        <a href="profile.html" class="btn">View Profile</a>
+    </div>
+    <nav class="navbar">
+        <a href="employee.html"><i class="fas fa-user"></i><span>Employee Details</span></a>
+        <a href="project.html"><i class="fas fa-project-diagram"></i><span>Project Details</span></a>
+        <a href="assignment.html"><i class="fas fa-tasks"></i><span>Assignment Details</span></a>
+        <a href="connection.html"><i class="fas fa-network-wired"></i><span>Connection Details</span></a>
+        <a href="task-details.html"><i class="fas fa-tasks"></i><span>Task Details</span></a>
+        <a href="resources.html"><i class="fas fa-book"></i><span>Resource Details</span></a>
+        <a href="allocation.html"><i class="fas fa-list"></i><span>Allocation Details</span></a>
+    </nav>
+</div>
+
+<section class="home-grid">
+   <h1 class="heading">Quick Options</h1>
+   <div class="options-container">
+       <!-- First Row -->
+       <a href="Human.html" class="option-link">
+        <div class="option">
+            <img src="hr.jpg" alt="Human" class="option-img">
+            <h2 class="option-title">Human</h2>
+            <p class="option-description">Human resources involve the management of people within an organization, focusing on recruitment, training, and development.</p>
+        </div>
+    </a>
+    
+       <div class="option">
+           <img src="fr.jpg" alt="Financial" class="option-img">
+           <h2 class="option-title">Financial</h2>
+           <p class="option-description">Financial resources refer to the money or capital available for an organization to fund its operations, investments, and activities.</p>
+       </div>
+       <div class="option">
+           <img src="pr.jpg" alt="Physical" class="option-img">
+           <h2 class="option-title">Physical</h2>
+           <p class="option-description">Physical resources include tangible assets such as land, buildings, equipment, and materials used in the production process.</p>
+       </div>
+       <div class="option">
+           <img src="ir.jpg" alt="Information" class="option-img">
+           <h2 class="option-title">Information</h2>
+           <p class="option-description">Information resources encompass data, knowledge, and intellectual property that can be used to support decision-making and operations.</p>
+       </div>
+       <!-- Second Row -->
+       <div class="option">
+           <img src="tr.jpg" alt="Technological" class="option-img">
+           <h2 class="option-title">Communication Infrastructure</h2>
+           <p class="option-description">Reliable communication infrastructure, including email, phone systems, and collaboration tools, facilitates efficient internal and external communication among team members, clients, and stakeholders.</div>
+       <div class="option">
+           <img src="nr.jpg" alt="Natural" class="option-img">
+           <h2 class="option-title">Quality Control and Assurance Systems</h2>
+           <p class="option-description">Implementing quality control and assurance systems ensures that products or services meet defined standards and customer expectations, enhancing customer satisfaction and brand reputation.</div>
+       <div class="option">
+           <img src="ir.jpg" alt="Information" class="option-img">
+           <h2 class="option-title">Leadership</h2>
+           <p class="option-description">Effective leadership is crucial for guiding teams, making strategic decisions, and fostering a positive work culture.</div>
+       <div class="option">
+           <img src="tr.jpg" alt="Technological" class="option-img">
+           <h2 class="option-title">Time Management Tools</h2>
+           <p class="option-description">Tools and techniques for managing time efficiently ensure that tasks are completed on schedule and deadlines are met</div>
+       <!-- Third Row -->
+       <div class="option">
+           <img src="nr.jpg" alt="Natural" class="option-img">
+           <h2 class="option-title">CRM software</h2>
+           <p class="option-description"> CRM software is a Customer Relationship Management software helps manage interactions with customers, streamline sales processes, and enhance customer satisfaction.</div>
+       <div class="option">
+           <img src="ir.jpg" alt="Information" class="option-img">
+           <h2 class="option-title">Legal and Compliance Resources</h2>
+           <p class="option-description">Access to legal expertise and compliance resources ensures that the organization operates within the bounds of the law and industry regulations.</div>
+       <div class="option">
+           <img src="tr.jpg" alt="Technological" class="option-img">
+           <h2 class="option-title">Employee Training and Development Programs</h2>
+           <p class="option-description">Continuous training and development programs enhance employee skills, productivity, and job satisfaction, contributing to organizational success.</div>
+       <div class="option">
+           <img src="nr.jpg" alt="Natural" class="option-img">
+           <h2 class="option-title">Research and Development (R&D) Resources</h2>
+           <p class="option-description">Investing in R&D resources enables innovation, product development, and staying ahead of market trends./div>
+       
+</section>
+
+
+
+<!-- Resource details section -->
+<section class="resource-details">
+   <h1 class="heading">Resource Details</h1>
+   <div class="details">
+      <p><strong>Budget:</strong> $XX million</p>
+      <p><strong>Turnover:</strong> $XX million</p>
+      <p><strong>Number of Employees:</strong> XX</p>
+      <p><strong>Food Resources Nearby:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p><strong>Facilities:</strong> Resourcify Connect plays a vital role in finding and arranging the resources for nay organisation that might be school</p>
+   </div>
+</section>
+
+<!-- Announcements section -->
+<section class="announcements">
+   <h1 class="heading">New Resources</h1>
+   <div class="announcement-bar">
+      <marquee behavior="scroll" direction="left" id="resource-marquee">
+         <!-- Placeholder for dynamically added resources -->
+      </marquee>
+   </div>
+</section>
+
+<section class="add-resource">
+    <h1 class="heading">Add New Resource</h1>
+    <form id="resource-form">
+        <label for="resource-name">Resource Name:</label>
+        <input type="text" id="resource-name" name="resource-name" required>
+        <label for="resource-description">Description:</label>
+        <textarea id="resource-description" name="resource-description" required></textarea>
+        <label for="important-checkbox">Mark as Important:</label>
+        <input type="checkbox" id="important-checkbox" name="important-checkbox">
+        <button type="submit">Add Resource</button>
+    </form>
+ </section>
+ 
+
+<!-- Resource Table section -->
+<section class="resource-table">
+   <h1 class="heading">Resource Table</h1>
+   <table id="resource-table">
+       <thead>
+           <tr>
+               <th>Resource Name</th>
+               <th>Description</th>
+               <th>Mark Important</th>
+           </tr>
+       </thead>
+       <tbody>
+           <!-- Newly added resources will be dynamically added here -->
+       </tbody>
+   </table>
+</section>
+<script>
+// Function to handle resource form submission
+function resourceFormSubmit(e) {
+    e.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+    // Get form input values
+    let resourceName = document.getElementById('resource-name').value;
+    let resourceDescription = document.getElementById('resource-description').value;
+
+    // Call a function to add the new resource
+    addNewResourceToTable(resourceName, resourceDescription);
+
+    // Clear the form fields after submission
+    document.getElementById('resource-name').value = '';
+    document.getElementById('resource-description').value = '';
+
+    // Display an alert
+    alert("Resource added successfully!");
+
+    // Send notification email to admin if marked as important
+    let important = document.getElementById('important-checkbox').checked;
+    if (important) {
+        sendImportantResourceNotification(resourceName, resourceDescription);
+    }
+}
+
+// Event listener for resource form submission
+let resourceForm = document.getElementById('resource-form');
+resourceForm.addEventListener('submit', resourceFormSubmit);
+
+// Function to add new resource to the table
+function addNewResourceToTable(name, description) {
+    // Create a new row for the resource table
+    let tableBody = document.querySelector('.resource-table tbody');
+    let newRow = tableBody.insertRow();
+
+    // Insert cells into the row and set their content
+    let cellName = newRow.insertCell(0);
+    cellName.textContent = name;
+
+    let cellDescription = newRow.insertCell(1);
+    cellDescription.textContent = description;
+
+    let cellImportant = newRow.insertCell(2);
+    cellImportant.textContent = document.getElementById('important-checkbox').checked ? 'Yes' : 'No';
+}
+
+// Function to send notification email for important resource
+function sendImportantResourceNotification(resourceName, resourceDescription) {
+    // In a real-world scenario, this function would send an email to the admin officer
+    // using a backend server. Below is a placeholder for such functionality.
+
+    // Replace the following code with actual code to send email via backend
+    let emailData = {
+        to: 'admin@example.com', // Admin officer's email
+        subject: 'Important Resource Added',
+        body: `A resource named "${resourceName}" with description "${resourceDescription}" has been marked as important.`
+    };
+
+    // Example AJAX request to send email (replace with actual implementation)
+    // Assume there's an endpoint /send-email in your backend to handle email sending
+    fetch('/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(emailData)
+    })
+    .then(response => {
+        console.log("sendig mail")
+        if (!response.ok) {
+            throw new Error('Failed to send email');
+        }
+        console.log('Email sent successfully');
+    })
+    .catch(error => {
+        console.error('Error sending email:', error);
+    });
+}
+
+</script>
+
+<footer class="footer">
+    &copy; Copyright @ 2024 by <span><a href="mailto:sb7160@srmist.edu.in">Saurajyoti Bhattacharjee</a></span> | All rights reserved!
+</footer>
+
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

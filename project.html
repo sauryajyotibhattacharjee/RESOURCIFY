@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Project Details</title>
+
+   <!-- Font Awesome CDN link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- Custom CSS file link -->
+   <link rel="stylesheet" href="css/style.css">
+   <style>
+      .project-box {
+    border: 1px solid #ccc; /* Adding a border for rectangular boxes */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Aligning text and icon to center */
+}
+
+.project-box .icon {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #555; /* Set the color of the icon */
+}
+
+.project-box img {
+    width: 30%; /* Ensuring the image fills the container */
+    border-radius: 5px 5px 0 0; /* Applying border-radius only to the top corners */
+}
+
+.more-details-btn {
+    display: inline-block;
+    background-color: rgb(218, 7, 218); /* Setting violet background color */
+    color: #fff;
+    padding: 10px 20px; /* Adjusting padding for better button size */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Adding transition effect */
+}
+
+   </style>
+</head>
+<body>
+
+<header class="header">
+   <section class="flex">
+      <a href="home.html" class="logo">
+         <img src="Rc.jpg" alt="Resourcify Connect" style="width: 100px; height: auto;">
+         <span>RESOURCIFY CONNECT</span>
+      </a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search projects..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Saurajyoti Bhattacharjee</h3>
+         <p class="role">CSE core student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+   </section>
+</header>
+
+<div class="side-bar">
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Saurajyoti Bhattacharjee</h3>
+      <p class="role">CSE core student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="employee.html"><i class="fas fa-user"></i><span>Employee Details</span></a>
+      <a href="project.html"><i class="fas fa-project-diagram"></i><span>Project Details</span></a>
+      <a href="assignment.html"><i class="fas fa-tasks"></i><span>Assignment Details</span></a>
+      <a href="connection.html"><i class="fas fa-network-wired"></i><span>Connection Details</span></a>
+      <a href="task-details.html"><i class="fas fa-tasks"></i><span>Task Details</span></a>
+      <a href="resources.html"><i class="fas fa-book"></i><span>Resource Details</span></a>
+      <a href="allocation.html"><i class="fas fa-list"></i><span>Allocation Details</span></a>
+   </nav>
+</div>
+
+<section class="project-details">
+   <h1 class="heading">Project Details</h1>
+
+   <div class="project-container">
+      <div class="project-box">
+         <img src="i image.png" alt="Infrastructure Development">
+         <h2>Infrastructure Development Projects</h2>
+         <p>Description: The project aims to build new facilities or upgrade existing infrastructure to enhance the organization's capabilities.</p>
+         <p>Features: Construction methods, materials used, energy-efficient design</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+
+      <div class="project-box">
+         <img src="ei.jpg" alt="Infrastructure Development">
+         <h2>Educational Initiatives</h2>
+         <p>Description: The project focuses on developing educational programs, curriculum enhancements, and innovative teaching methods.</p>
+         <p>Features: Curriculum structure, teaching techniques, educational goals</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+
+      <div class="project-box">
+         <img src="rs.png" alt="Infrastructure Development">
+         <h2>Research Projects</h2>
+         <p>Description: The project involves conducting research activities to explore new ideas, technologies, or solutions to specific problems.</p>
+         <p>Features: Research objectives, methodologies, outcomes</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+
+      <div class="project-box">
+         <img src="cep.jpg" alt="Infrastructure Development">
+         <h2>Community Engagement Projects</h2>
+         <p>Description: The project aims to engage with the community through outreach programs, events, or initiatives.</p>
+         <p>Features: Testimonials, impact assessments, future plans</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+
+      <div class="project-box">
+         <img src="tc.jpg" alt="Infrastructure Development">
+         <h2>Technology Projects</h2>
+         <p>Description: The project focuses on developing or implementing technological solutions, software development, or IT infrastructure upgrades.</p>
+         <p>Features: Technology stack, development process, user interface design</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+
+      <div class="project-box">
+         <img src="emp.png" alt="Infrastructure Development">
+         <h2>Event Management Projects</h2>
+         <p>Description: The project involves planning and organizing events such as conferences, workshops, or cultural events.</p>
+         <p>Features: Event schedules, speaker profiles, registration information</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+
+      <div class="project-box">
+         <img src="sp.png" alt="Infrastructure Development">
+         <h2>Sustainability Projects</h2>
+         <p>Description: The project focuses on sustainability efforts such as environmental conservation, energy-saving initiatives, or waste reduction programs.</p>
+         <p>Features: Metrics on energy savings, carbon footprint reduction, sustainability certifications</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+
+      <div class="project-box">
+         <img src="i image.png" alt="Infrastructure Development">
+         <h2>Entrepreneurship and Innovation Projects</h2>
+         <p>Description: The project involves fostering entrepreneurship and innovation through startup incubation programs, hackathons, or innovation challenges.</p>
+         <p>Features: Success stories, innovative product prototypes, collaboration opportunities</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+
+      <div class="project-box">
+         <img src="i image.png" alt="Infrastructure Development">
+         <h2>Internship or Experiential Learning Projects</h2>
+         <p>Description: The project focuses on providing students with practical learning experiences through internships, co-op programs, or industry partnerships.</p>
+         <p>Features: Testimonials, project outcomes, future opportunities</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+
+      <div class="project-box">
+         <img src="i image.png" alt="Infrastructure Development">
+         <h2>Collaborative Projects</h2>
+         <p>Description: The project involves collaboration with other institutions, organizations, or international partners on joint initiatives.</p>
+         <p>Features: Collaborating institutions, project timelines, shared resources</p>
+         <a href="#" class="more-details-btn">More Details</a>
+      </div>
+   </div>
+</section>
+
+<footer class="footer">
+   &copy; copyright @ 2024 by <span><a href="mailto:sb7160@srmist.edu.in">Saurajyoti Bhattacharjee</a></span> | all rights reserved!
+</footer>
+
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+   
+</body>
+</html>
